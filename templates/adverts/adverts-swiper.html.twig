@@ -1,0 +1,43 @@
+{#
+/**
+ * @file adverts-swiper.html.twig
+ * Default theme implementation to present adverts-swiper.
+ *
+ * Available variables:
+ * - adverts: A list of adverts items.
+ *
+ * @see template_preprocess_adverts_swiper()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<!-- Hero section -->
+<section class="hero-section">
+  <div class="hero-slider owl-carousel">
+    {% for advert in adverts %}
+      <div class="hs-item set-bg" data-setbg="{{ file_url(advert.image.fileuri) }}">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-7 text-white">
+              <span>{{ advert.sub_title }}</span>
+              <h2>{{ advert.title }}</h2>
+              <p>{{ advert.summary }}</p>
+              <a href="{{ advert.url_to_product }}" class="site-btn sb-line">{{ 'DISCOVER'|t }}</a>
+              <a href="{{ advert.url_to_product }}" class="site-btn sb-white">{{ 'ADD TO CART'|t }}</a>
+            </div>
+          </div>
+          <div class="offer-card text-white">
+            <span>{{ 'from'|t }}</span>
+            <h2>{{ advert.price_of_product }}</h2>
+            <p>{{ 'SHOP NOW'|t }}</p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="container">
+    <div class="slide-num-holder" id="snh-1"></div>
+  </div>
+</section>
+<!-- Hero section end -->
