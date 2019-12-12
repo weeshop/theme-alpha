@@ -153,3 +153,8 @@ function weeshop_alpha_preprocess_menu_local_task(array &$variables) {
 function weeshop_alpha_preprocess_menu_local_action(array &$variables) {
   $variables['element']['#link']['url']->setOption('attributes', ['class'=> ['site-btn']]);
 }
+
+
+function weeshop_alpha_preprocess_commerce_product(array &$variables) {
+  $variables['temp_uuid'] = \Drupal::service('uuid')->generate();
+}
