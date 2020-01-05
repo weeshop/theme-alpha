@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ *
+ * Default template for promotions.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapper.
+ * - promotion: The rendered promotion fields.
+ *   Use 'promotion' to print them all, or print a subset such as
+ *   'promotion.name'. Use the following code to exclude the
+ *   printing of a given field:
+ *   @code
+ *   {{ promotion|without('name') }}
+ *   @endcode
+ * - promotion_entity: The promotion entity.
+ * - promotion_url: The promotion URL.
+ *
+ * @ingroup themeable
+ */
+#}
+<!-- Banner section -->
+<section{{ attributes.addClass('banner-section') }}>
+  <div class="container">
+    <div class="banner set-bg" data-setbg="{{ file_url(promotion_entity.image.0.entity.uri.value) }}">
+      {% if promotion_entity.end_date.value %}<div class="tag-new">{{ '限时'|t }}</div>{% endif %}
+      <h2>{{ promotion_entity.name.0.value }}</h2>
+      <span>{{ promotion_entity.description.0.value }}</span>
+      <a href="{{ promotion_url }}" class="site-btn">{{ '马上购物'|t }}</a>
+    </div>
+  </div>
+</section>
+<!-- Banner section end  -->
