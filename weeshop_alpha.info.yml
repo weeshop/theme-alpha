@@ -5,7 +5,7 @@ package: WeeShop
 core: 8.x
 libraries:
   - weeshop_alpha/global-styling
- 
+
 base theme: stable
 
 regions:
@@ -28,3 +28,7 @@ regions:
   footer_sixth: 'Footer sixth'
 
 logo: assets/img/logo.png
+
+libraries-override:
+  adminimal_theme/google-fonts: weeshop_alpha/adminimal_theme-google-fonts
+  adminimal_admin_toolbar/google-fonts: weeshop_alpha/adminimal_theme-google-fonts

@@ -12,7 +12,6 @@ global-styling:
       'assets/css/animate.css': {}
       'assets/css/style.css': {}
       'assets/css/weeshop_alpha.css': {}
-
   js:
     'assets/js/bootstrap.min.js': {}
     'assets/js/jquery.slicknav.min.js': {}
@@ -34,3 +33,19 @@ js-header:
   js:
     'assets/js/html5shiv.min.js': {}
     'assets/js/respond.min.js': {}
+
+semantic:
+  version: 2.4.1
+  css:
+    theme:
+      'assets/semantic_ui/components/comment.min.css': {}
+  js:
+    'assets/semantic_ui/semantic.min.js': {}
+  dependencies:
+    - core/jquery
+
+adminimal_theme-google-fonts:
+  version: VERSION
+  css:
+    base:
+      assets/css/adminimal_fonts.css: {}
