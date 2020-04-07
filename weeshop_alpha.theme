@@ -158,3 +158,15 @@ function weeshop_alpha_preprocess_menu_local_action(array &$variables) {
 function weeshop_alpha_preprocess_commerce_product(array &$variables) {
   $variables['temp_uuid'] = \Drupal::service('uuid')->generate();
 }
+
+
+function weeshop_alpha_preprocess_comment(array &$variables) {
+
+  $variables['user_picture_field'] = $variables['user_picture'];
+  \Drupal::service('renderer')->render($variables['user_picture_field']);
+  $variables['user_picture_field'] = \Drupal::service('renderer')->render($variables['user_picture_field']['user_picture']);
+  preg_match('/<img.*src="(.*)".*>/', $variables['user_picture_field'], $matches);
+  if (isset($matches[1])) $variables['user_picture_url'] = $matches[1];
+  else $variables['user_picture_url'] = null;
+
+}

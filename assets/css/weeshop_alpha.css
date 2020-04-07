@@ -21,6 +21,9 @@ a:hover {
 .form-item {
   margin-bottom: 10px;
 }
+.form-item.js-form-type-textarea {
+  margin-bottom: 0;
+}
 
 
 label {
@@ -233,7 +236,7 @@ input[type=text].textfield {
 }
 
 
-.indented {
+.ui.comments .indented {
   margin-left: 3rem;
   border-left: 1px #efefef solid;
   padding: 1rem 0 0 1rem;

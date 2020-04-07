@@ -39,6 +39,9 @@ semantic:
   css:
     theme:
       'assets/semantic_ui/components/comment.min.css': {}
+      'assets/semantic_ui/components/card.min.css': {}
+      'assets/semantic_ui/components/button.min.css': {}
+      'assets/semantic_ui/components/icon.min.css': {}
   js:
     'assets/semantic_ui/semantic.min.js': {}
   dependencies:
