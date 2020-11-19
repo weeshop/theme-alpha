@@ -61,6 +61,7 @@ p {
 
 img {
 	max-width: 100%;
+  height: auto;
 }
 
 input:focus,
@@ -906,7 +907,7 @@ ol {
 
 .product-item .pi-text {
 	padding-top: 22px;
-	height: 87px;
+	height: 100px;
 }
 
 .product-item .pi-text h6 {
