@@ -1,0 +1,10 @@
+{
+  "name": "drupal/weeshop_alpha",
+  "description": "Front end theme for WeeShop.",
+  "type": "drupal-theme",
+  "homepage": "https://www.drupal.org/project/weeshop_alpha",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/weeshop_alpha"
+  },
+  "license": "GPL-2.0+"
+}
