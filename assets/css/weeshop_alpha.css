@@ -6,6 +6,20 @@ a:hover {
   color: #f51167;
 }
 
+.p-stock > div,
+.p-stock > div > div {
+  display: flex;
+  align-items: flex-end;
+}
+.p-stock > div > div {
+  padding-right: 12px;
+}
+.p-stock > div p {
+  margin: 0;
+  padding: 0;
+  line-height: 12px;
+}
+
 .p-price > div {
   display: flex;
   align-items: flex-end;
