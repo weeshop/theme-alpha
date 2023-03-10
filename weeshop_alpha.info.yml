@@ -2,7 +2,7 @@ name: WeeShop Alpha
 type: theme
 description: 'Default theme for weeshop.'
 package: WeeShop
-core: 8.x
+core_version_requirement: ^8 || ^9
 libraries:
   - weeshop_alpha/global-styling
 
